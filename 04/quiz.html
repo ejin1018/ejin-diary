@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>table practice</title>
+	<style>
+		table,th,td{
+			border:solid 1px #000;
+			border-collapse:collapse;
+		}
+		td{
+			padding:3px;
+		}
+		thead, tfoot{
+			background-color:#ffe4b5;
+		}
+		ul{
+			list-style:none;
+			padding:0;
+		}
+		li{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>퀴즈</h1>
+	<h2>퀴즈1</h2>
+	<table>
+		<caption>레시피 재료</caption>
+		<thead>
+			<tr>
+				<th>재료</th>
+				<th>첨가량</th>
+				<th>48시간</th>
+				<th>대체재료</th>
+			</tr>		
+		</thead>
+		<tr>
+			<th rowspan="5">수상층</th>
+			<td>로즈마리</td>
+			<td>30g</td>
+			<td rowspan="3">증류수</td>
+		</tr>
+		<tr>
+			<td>네..뭐죠?</td>
+			<td>30g</td>
+		</tr>
+		<tr>
+			<td>증류수</td>
+			<td>90g</td>
+		</tr>
+		<tr>
+			<td>뭔 쿼터</td>
+			<td>1.5g</td>
+			<td>쟁탄검?</td>
+		</tr>
+		<tr>
+			<td>글리세린</td>
+			<td>10g</td>
+			<td>히아루론산 10g</td>
+		</tr>
+		<tr>
+			<th rowspan="3">계면활성제</th>
+			<td>LES/CDE</td>
+			<td>180g / 10g</td>
+			<td>CDE + LES</td>
+		</tr>
+		<tr>
+			<td>코코베타인</td>
+			<td>5g</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<td>애플 계면 활성제</td>
+			<td>10g</td>
+			<td>올리브 계면 활성제</td>
+		</tr>
+		<tfoot>
+			<tr>
+				<td colspan="4">좋은 향을 위해서면 엘라스틴향 사용 추천</td>
+			</tr>		
+		</tfoot>
+	</table>
+	<br>
+	<h2>퀴즈2</h2>
+	<h3>예약 문의</h3>
+	<form action="#" method="post">
+		<ul>
+			<li>
+				<label>작성자
+					<input type="text">
+				</label>			
+			</li>
+			<li>
+				<label>비밀번호
+					<input type="password">
+				</label>			
+			</li>
+			<li>
+				<label>제목
+					<input type="text">
+				</label>			
+			</li>
+		</ul>
+	</form>
+	<form action="#" method="get">
+		<span>예약하실 객실을 선택하세요</span>
+		<label>
+			<input type="radio" name="room" checked>Single /
+		</label>
+		<label>
+			<input type="radio" name="room">Double /
+		</label>
+		<label>
+			<input type="radio" name="room">Twin
+		</label>
+	</form>
+	<p>기타 패키지 옵션을 선택하세요</p>
+	<form action="#" method="get">
+		<label><input type="checkbox" name="options1" value="조식" checked>조식</label>
+		<label><input type="checkbox" name="options2" value="바베큐">바베큐</label>
+		<label><input type="checkbox" name="options3" value="픽업 서비스">픽업 서비스</label>
+	</form>
+</body>
+</html>

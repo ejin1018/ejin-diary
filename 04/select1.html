@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>select</title>
+	<style>
+		.submitBtn{
+			display:block;
+			height:40px;
+			padding:0 12px;
+			border:none;
+			background:#eeeeee;
+			font-weight:bold;
+			line-height:30px;
+			color:#006600;
+			box-shadow: 1px 1px 2px rgba(0,102,0,0.5);
+			cursor: pointer;
+		}
+		.submitBtn img{
+			padding:0;
+			border:0;
+			display:block;
+			float:left;
+			margin:5px 5px 0 0;
+		}
+		.submitBtn:hover, .submitBtn:focus{
+			border:none;
+			background:#006600;
+			color:#fff;
+			transition:all .4s;
+		}
+	</style>
+</head>
+<body>
+	<form action="#" method="post">
+		<h2>multiple option</h2>
+		<select multiple size="10">
+			<option value="건축" selected>건축</option>
+			<option value="기계">기계</option>
+			<option value="산업">산업</option>
+			<option value="전기" selected>전기</option>
+			<option value="컴퓨터" selected>컴퓨터</option>
+			<option value="화학">화학</option>
+		</select>
+		<h2>opt group</h2>
+		<select>
+			<optgroup label="공과대학">
+				<option value="건축">건축</option>
+				<option value="기계">기계</option>
+				<option value="산업">산업</option>
+				<option value="전기">전기</option>
+				<option value="컴퓨터">컴퓨터</option>
+				<option value="화학">화학</option>			
+			</optgroup>
+			<optgroup label="인문대학">
+				<option value="철학">철학</option>
+				<option value="인문">인문</option>
+				<option value="문예창작">문예창작</option>			
+				<option value="사학">사학</option>
+			</optgroup>
+		</select>
+		<h2>datalist</h2>
+		<label for="interest">관심분야</label>
+		<input type="text" id="interest" list="choices">
+		<datalist id="choices">
+			<option value="grammer" label="문법"></option>
+			<option value="voca" label="어휘"></option>
+			<option value="cat" label="고양이"></option>
+			<option value="speaking" label="회화"></option>
+		</datalist>
+		<h2>button</h2>
+		<button type="submit" class="submitBtn">
+			<img src="images/tick.png" alt=""> 전송하기
+		</button>
+	</form>
+</body>
+</html>

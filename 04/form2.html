@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>checkbox radio with label</title>
+	<style>
+		ul{
+			list-style:none;
+		}
+		li{
+			margin:20px;
+		}
+	</style>
+</head>
+<body>
+	<form action="#" method="post">
+		<h3>수강분야 (복수선택 가능)</h3>
+		<ul>
+			<li>
+				<label for="ch1">분야A	</label>
+				<input type="checkbox" name="area" id="ch1" value="grm">	
+			</li>
+			<li>
+				<label for="ch2">분야B	</label>
+				<input type="checkbox" name="area" id="ch2" value="wr">
+			</li>
+			<li>
+				<input type="checkbox" name="area" value="rd">분야C
+			</li>
+		</ul>
+		<h3>수강과목 (1과목만 선택 가능)</h3>
+		<ul>
+			<li>
+				<label>
+					<input type="radio" name="subject" checked>과목A
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="radio" name="subject">과목B
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="radio" name="subject">과목C
+				</label>
+			</li>
+		</ul>
+		<input type="submit" value="제출하기">
+	</form>
+</body>
+</html>

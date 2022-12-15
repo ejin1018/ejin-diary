@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>상품주문서</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		h1{
+			text-align:center;
+			margin:30px;
+		}
+		fieldset{
+			width:80%;
+			margin:0 auto 10px;
+			padding:20px 30px;
+		}
+		legend{
+			font-size:18px;
+			font-weight:bold;
+			color:purple;
+		}
+		label{
+			display:inline-block;
+			width:150px;
+			font-weight:bold;
+		}
+		ul{
+			list-style:none;
+		}
+		p,li{
+			margin-bottom:10px;
+		}
+		.coffeeName{
+			width:200px;
+		}
+		.buttonWrap{
+			text-align:center;
+		}
+		.buttonWrap button{
+			padding:5px 10px;
+		}
+		button[type="submit"]{
+			font-weight:bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>상품 주문서</h1>
+	<form action="#">
+		<fieldset>
+			<legend>개인 정보</legend>
+			<p>
+				<label for="name">이름</label>
+				<input type="text" id="name" placeholder="여백없이 입력">
+			</p>
+			<p>
+				<label for="call">연락처</label>
+				<input type="text" id="call" placeholder="연락 가능한 번호">
+			</p>
+		</fieldset>	
+		<fieldset>
+			<legend>배송지 정보</legend>
+			<p>
+				<label for="addr">주소</label>
+				<input type="text" id="addr">
+			</p>
+			<p>
+				<label for="number">전화번호</label>
+				<input type="text" id="number">
+			</p>
+			<p>
+				<label for="memo">메모</label>
+				<input type="text" id="memo">
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>주문 정보</legend>
+				<ul>
+					<li>
+						<input type="checkbox" id="bean1" value="" size="5">
+						<label for="bean1" class="coffeeName">과테말라 안티구아 (100g)</label>
+						<input type="number" value="0">개				
+					</li>
+					<li>
+						<input type="checkbox" id="bean2" value="" size="5">
+						<label for="bean2" class="coffeeName">인도네시아 만달링 (100g)</label>
+						<input type="number" value="0">개		
+					</li>
+					<li>
+						<input type="checkbox" id="bean3" value="" size="5">
+						<label for="bean3" class="coffeeName">과테말라 안티구아 (100g)</label>
+						<input type="number" value="0">개		
+					</li>
+				</ul>
+		</fieldset>
+		<div class="buttonWrap">
+			<button type="submit">주문하기</button>
+			<button type="reset">다시작성</button>	
+		</div>
+	</form>	
+</body>
+</html>

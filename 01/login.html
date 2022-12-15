@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email page example</title>
+    <style>
+      .screen {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 360px;
+        height: 640px;
+        border: solid 1px #ddd;
+      }
+      .screen form {
+        width: 80%;
+        margin: 100px auto;
+      }
+      .mailbox,
+      .pwbox {
+        width: 100%;
+        height: 48px;
+        border: solid 1px #c2c2c2;
+        border-radius: 5px;
+        background: #f1f1f1;
+        padding: 0;
+        padding-left: 10px;
+        box-sizing: border-box;
+      }
+      .mailbox {
+        margin-bottom: 5px;
+      }
+      .mailbox::placeholder,
+      .pwbox::placeholder {
+        color: #c2c2c2;
+      }
+      .mailbox:focus,
+      .pwbox:focus {
+        outline: none;
+      }
+      .sendbox {
+        width: 100%;
+        height: 48px;
+        background: #6da6ae;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        margin: 0 auto;
+        cursor: pointer;
+        box-shadow: 3px 3px 5px rgba(109, 166, 174, 0.5);
+        margin-top: 18px;
+      }
+      .signbox{
+        width: 100%;
+        height: 48px;
+        background: #fff;
+        color: #6da6ae;
+        border: solid 1px #6da6ae;
+        border-radius: 5px;
+        margin: 0 auto;
+        cursor: pointer;
+        box-shadow: 3px 3px 5px rgba(109, 166, 174, 0.5);
+        margin-top: 10px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="screen">
+      <form>
+        <input type="email" class="mailbox" placeholder="이메일을 입력하세요">
+        <input
+          type="password"
+          class="pwbox"
+          placeholder="비밀번호를 입력하세요"
+        >
+        <button class="sendbox" onclick="logpop();">로그인</button>
+        <button class="signbox" onclick="popup();">회원가입</button>
+      </form>
+    </div>
+
+    <script>
+      function logpop(){
+        alert('로그인 하시겠습니까?');
+      }
+      function popup(){
+        alert('회원가입 하시겠습니까?');
+      }
+    </script>
+  </body>
+</html>

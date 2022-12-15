@@ -1,0 +1,10 @@
+
+@font-face {
+  font-family: 'trana';
+  src: 
+    url('fonts/trana.ttf') format('truetype');
+}
+
+.w-font{
+  font-family: 'trana', sans-serif;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="float-layout.css">
+  <title>Float layout</title>
+</head>
+<body>
+  <div class="layout-wrap cf">
+    <div class="left fl">
+      <div class="left-top"></div>
+      <div class="left-bot cf">
+        <div class="left-bot-left fl">
+          <div class="left-bot-left-top"></div>
+          <div class="left-bot-left-bot cf">
+            <div class="one fl">
+              <div class="one-top"></div>
+              <div class="one-bot"></div>
+            </div>
+            <div class="two fl"></div>
+            <div class="three fl"></div>
+          </div>
+        </div>
+        <div class="left-bot-right fl"></div>
+      </div>
+    </div>
+    <div class="right fl">
+      <div class="right-top"></div>
+      <div class="right-bot"></div>
+    </div>
+  </div>
+</body>
+</html>

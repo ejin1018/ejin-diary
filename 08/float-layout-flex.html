@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="float-layout-flex.css">
+  <title>float-flex</title>
+</head>
+<body>
+  <div class="container hori-flex">
+    <div class="big-left vert-flex">
+      <div class="big-left-top"></div>
+      <div class="big-left-bot hori-flex">
+        <div class="mid-left vert-flex">
+          <div class="mid-left-top"></div>
+          <div class="mid-left-bot hori-flex">
+            <div class="small-left vert-flex">
+              <div class="smallest-top"></div>
+              <div class="smallest-bot"></div>
+            </div>
+            <div class="small-cent"></div>
+            <div class="small-right"></div>
+          </div>
+        </div>
+        <div class="mid-right"></div>
+      </div>
+    </div>
+    <div class="big-right vert-flex">
+      <div class="big-right-top"></div>
+      <div class="big-right-bot"></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>배경 이미지</title>
+  <style>
+    div{
+      width:300px;
+      height:150px;
+      border:1px double lightcoral;
+      margin-bottom:5px;
+      background: url(images/bg4.jpg) no-repeat;
+    }
+    .bg1{
+      background-size: auto;
+    }
+    .bg2{
+      background-size: contain;
+    }
+    .bg3{
+      background-size: cover;
+    }
+    .bg4{
+      background-size: 100px 100px;
+    }
+    .bg5{
+      background-size: 60% 40%;
+      background-position: left 70% bottom 10%;
+    }
+    .bg6{
+      background-size: 150px 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg1"></div>
+	<div class="bg2"></div>
+	<div class="bg3"></div>
+	<div class="bg4"></div>
+	<div class="bg5"></div>
+	<div class="bg6"></div>
+ </body>
+</html>

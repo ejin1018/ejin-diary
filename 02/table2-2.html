@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Table2</title>
+	<style>
+		table,th,tr,td{
+			border:solid 1px #93c6a7;
+		}
+		th{
+			text-align:center;
+			padding:15px;
+		}
+		td{
+			text-align:left;
+			color:#888888;
+		}
+		tr>td:nth-child(even){
+			width:120px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>이름</th>
+			<td></td>
+			<th>연락처</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th rowspan="2">주소</th>
+			<td colspan="3">(도로명 주소)</td>
+		</tr>
+		<tr>
+			<td colspan="3">(우편번호)</td>
+		</tr>
+		<tr>
+			<th>자기소개</th>
+			<td colspan="3"></td>
+		</tr>
+	</table>
+</body>
+</html>

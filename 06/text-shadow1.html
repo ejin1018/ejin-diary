@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>text-transform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swapo&effect=neon" rel="stylesheet">
+  <style>
+    h1{
+      font-family: 'Lobster', cursive;
+      font-size:70px;
+    }
+    .shadow1{
+      color:#fff;
+      text-shadow: 0px 0px 25px teal;
+    }
+    .shadow2{
+      color:#fff;
+      text-shadow: 1px 1px teal, -1px -1px teal, 1px -1px teal, -1px 1px teal ;
+    }
+    .shadow3{
+      color:#fff;
+      text-shadow: 3px 4px 0px teal; 
+    }
+    .shadow4{
+      color:teal;
+      text-shadow:5px 5px 15px wheat;
+    }
+    .shadow4:hover{
+      color:wheat;
+      text-shadow:5px 5px 15px teal;
+    }
+    .shadow5{
+      font-family: 'Shadows Into Light', cursive;
+    }
+    .shadow6{
+      text-shadow: 
+        0 0 0.1em #fff, 
+        0 0 0.2em #fff, 
+        0 0 0.3em #fff, 
+        0 0 0.4em #b477ff, 
+        0 0 0.6em #9845ff, 
+        0 0 0.8em #9845ff, 
+        0 0 1em #9845ff, 
+        0 0 1.2em #9845ff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+	<h1 class="shadow1">HTML5</h1> 
+	<h1 class="shadow2">HTML5</h1>
+	<h1 class="shadow3">HTML5</h1>
+	<h1 class="shadow4">HTML5</h1>
+	<h1 class="shadow5 font-effect-neon">HTML5</h1>
+	<h1 class="shadow6">HTML5</h1>
+</body> 
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>상품주문서</title>
+	<link rel="stylesheet" href="./order.css">
+</head>
+<body>
+	<div class="container">
+		<h1>상품주문서</h1>
+		<form action="#">
+			<fieldset>
+				<legend>개인정보</legend>
+				<ul>
+					<li>
+						<label for="uname" class="title">이름</label>
+						<input type="text" placeholder="여백없이 입력" id="uname" required>
+					</li>
+					<li>
+						<label for="tel1" class="title">연락처</label>
+						<input type="tel" name="tel1" maxlength="3" size="1" value="010">-
+						<input type="tel" name="tel1" maxlength="4" size="1">-
+						<input type="tel" name="tel1" maxlength="4" size="1">
+						<small>*연락 가능한 번호 입력</small>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>배송지정보</legend>
+				<ul>
+					<li>
+						<label for="addr" class="title">주소</label>
+						<input type="text" id="addr" required>
+					</li>
+					<li>
+						<label for="tel2" class="title">전화번호</label>
+						<input type="tel" name="tel2" maxlength="3" size="1" value="010">-
+						<input type="tel" name="tel2" maxlength="4" size="1">-
+						<input type="tel" name="tel2" maxlength="4" size="1">
+					</li>
+					<li>
+						<label for="comment" class="title">메모</label>
+						<textarea name="memo" id="comment" cols="40" rows="3"></textarea>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>주문정보</legend>
+				<ul>
+					<li>
+						<label class="">
+							<input type="checkbox">
+							과테말라 안티구아 (100g)
+						</label>
+						<label>
+							<input type="number" value="0" min="0" max="5">
+							개
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox">
+							인도네시아 만달링 (100g)
+						</label>
+						<label>
+							<input type="number" value="0" min="0" max="5">
+							개
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox">
+							케냐 AA (100g)
+						</label>
+						<label>
+							<input type="number" value="0" min="0" max="5">
+							개
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<div class="centered">
+				<input type="submit" value="주문하기">
+				<input type="reset" value="다시 작성하기">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.container{
+  width: 80%;
+  margin:0 auto;
+}
+header{
+  height: 75px;
+  background: #426BA5;
+}
+nav{
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  display: inline-block;
+}
+h1{
+  width: 50%;
+  float: left;
+  color: #fff;
+  margin: 0;
+  line-height: 75px;
+}
+.gnb{
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding:0;
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+  list-style: none;
+}
+.gnb li{
+  float: left;
+  margin-right: 15px;
+  line-height: 75px;
+}
+
+.dog-type-container{
+  padding: 5px 10px;
+  border: 3px solid #426BA5;
+}
+.dog-type h2{
+  font-size: 18px;
+}
+.dog-type dl dt{
+  font-weight: 600;
+  color: slateblue;
+}
+.dog-type dl dt .icon{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(images/bg.png) no-repeat;
+  background-size: cover;
+}
+.dog-type dl dd{
+  font-size: 14px;
+}
+
+.healthy-dog{
+  margin-top: 30px;
+}
+
+footer{
+  padding: 8px 0;
+  background: #426BA5;
+  margin: 0;
+}
+footer p{
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}

@@ -1,0 +1,183 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+/* initial css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  color:#0F4CAA;
+}
+ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+a,a:link, a:visited {
+  display: inline-block;
+  text-decoration: none;
+}
+textarea{
+  resize:none;
+}
+
+/* font title 28px; content 16px; */
+/* font-weight 300 , 800 */
+
+body{
+  background:#f7f7f7;
+}
+.diaryTitle{
+  margin:60px auto;
+  font-size:45px;
+  font-weight:300;
+  text-align: center;
+  cursor:default;
+}
+.diaryTitle span{
+  font-weight:600;
+}
+.myLinkWrap{
+  width:60%;
+  margin: 0 auto 50px;
+}
+.myLink{
+  position:relative;
+  font-size:28px;
+  font-weight:800;
+  margin-right: 50px;
+}
+.myLink span{
+  font-size:16px;
+  font-weight:300;
+}
+.myLink1:after{
+  content:'_';
+  position:absolute;
+  left:0;
+  bottom:-45px;
+  opacity:0.9;
+  font-family: 'Fredericka the Great', cursive;
+  font-size:140px;
+  z-index: -999;
+}
+.myLink2:after{
+  content:'__';
+  position:absolute;
+  left:0;
+  bottom:-45px;
+  opacity:0.9;
+  font-family: 'Fredericka the Great', cursive;
+  font-size:140px;
+  z-index: -999;
+  letter-spacing: -5px;
+}
+
+.hwWrap{
+  width:60%;
+  margin:0 auto 50px;
+  border:solid 1px #0F4CAA;
+}
+.hwContainer{
+  display: inline-block;
+  width: 100%;
+}
+.dateMarking{
+  font-size:28px;
+  font-weight:800;
+  padding:10px;
+  border-bottom:solid 1px #0F4CAA;
+}
+.hwLeft{
+  width:50%;
+  float:left;
+}
+.hwRight{
+  width:50%;
+  float:left;
+  border-left:solid 1px #0F4CAA;
+}
+.hwList{
+  padding:10px;
+}
+.hwList > li{
+  margin-bottom:12px;
+}
+.hwList > li:last-child{
+  margin-bottom:0;
+}
+.hwList > li > a{
+  position:relative;
+  font-weight:300;
+}
+.hwList > li > a:after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-2px;
+  width:0%;
+  height:1px;
+  background:#0F4CAA;
+  transition:all .4s;
+}
+.hwList > li > a:hover::after{
+  width:100%;
+}
+
+
+.workWrap{
+  width:90%;
+  margin:0 auto 50px;
+  overflow: hidden;
+}
+.workContainer{
+  float: left;
+  width: 32%;
+  padding: 10px;
+  margin-right: 2%;
+  border:solid 1px #0F4CAA;
+}
+.workContainer:last-child{
+  margin-right:0;
+}
+.typeMarking{
+  width: 100%;
+  margin:0 auto;
+  font-size:28px;
+  font-weight:800;
+  padding:10px 0;
+  border-bottom:solid 6px #0F4CAA;
+}
+.dateBox{
+  width: 100%;
+  margin-bottom:12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:26px;
+  font-weight:800;
+  padding:10px 0;
+  border-bottom:solid 3px #0F4CAA;
+}
+.workList > li{
+  position:relative;
+  margin-bottom:12px;
+}
+.workList > li > a{
+  font-size: 16px;
+  font-weight:300;
+}
+.workList > li:after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-2px;
+  width:0%;
+  height:1px;
+  background:#0F4CAA;
+  transition:all .4s;
+}
+.workList > li:hover::after{
+  width:100%;
+}
