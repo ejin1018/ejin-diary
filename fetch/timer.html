@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function timer(sec){
+      return new Promise((good,bad)=>{
+        setTimeout(()=>{
+          good('good');
+          bad('bad');
+        },sec)
+      })
+    }
+
+    // timer(1000).then((x)=>{
+    //   document.write(`result is ${x}`);
+    //   return timer(500);
+    // }).then((x)=>{
+    //   document.write(`result is ${x}`);
+    //   return timer(500);
+    // })
+    // timer(500).catch((y)=>{
+    //   document.write(`bad reason is ${y}`);
+    // })
+
+    const run = async()=>{
+      document.write('start');
+      let result = await timer(500);
+      document.write('result is '+result);
+      result = await timer(500);
+      document.write('result is so '+result);
+    }
+    run();
+  </script>
+</body>
+</html>
