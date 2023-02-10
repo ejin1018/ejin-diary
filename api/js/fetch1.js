@@ -1,5 +1,5 @@
 const castBox = document.querySelector('#container');
-let statusText,rainIcon;
+let statusText,rainIcon,locText;
 rainIcon=[
   '<i class="bi bi-brightness-high-fill"></i>',
   '<i class="bi bi-cloud-drizzle-fill"></i>',
@@ -15,7 +15,7 @@ let params = {
   dataType:'JSON',
   baseDate: Today,
   baseTime: '0600',
-  nx:'61',
+  nx:'60',
   ny:'127'
 }
 url=`${url}${params.type[0]}?serviceKey=${params.key}&pageNo=${params.pageNo}&numOfRows=${params.numOfRows}&dataType=${params.dataType}&base_date=${params.baseDate}&base_time=${params.baseTime}&nx=${params.nx}&ny=${params.ny}`
@@ -59,12 +59,22 @@ async function setPosts(){
     },
     temperature: datas[3].obsrValue,
     wind: datas[7].obsrValue,
+    nx:datas[0].nx,
+    ny:datas[0].ny,
+    loc:function(){
+      let point = [this.nx, this.ny];
+      console.log(point);
+      if(point[0] == 60 && point[1] == 127){
+        locText = '서울특별시'
+      }
+    }
   }
   cast.rainInfo();
+  cast.loc();
 
   tr.innerHTML=`
     <td>${cast.baseDate}</td>
-    <td>지역: 서울/강남</td>
+    <td>지역: ${locText}</td>
     <td>강수형태: ${statusText}${rainIcon}</td>
     <td>기온: ${cast.temperature}˚</td>
     <td>바람: ${cast.wind}/ms</td>
